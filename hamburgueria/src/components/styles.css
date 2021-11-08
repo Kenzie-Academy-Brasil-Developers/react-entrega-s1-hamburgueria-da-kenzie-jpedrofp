@@ -1,0 +1,490 @@
+:root {
+  --color-primary: #27ae60;
+  --color-primary-50: #93d7af;
+  --color-secundary: #eb5757;
+  --grey-100: #333333;
+  --grey-50: #828282;
+  --grey-20: #e0e0e0;
+  --grey-30: #a5a5a5;
+  --negative: #e60000;
+  --warning: #ffcd07;
+  --sucess: #168821;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+b,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  list-style: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffff;
+  color: var(--grey-100);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 26px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h5,
+h6 {
+  font-weight: thin;
+}
+h5 {
+  color: var(--color-primary);
+}
+h6 {
+  color: var(--grey-50);
+}
+
+.topo {
+  background-color: var(--grey-20);
+}
+
+/* @media only screen and (max-width: 600px) { */
+.title {
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+h1::after {
+  content: " Kenzie";
+  color: var(--color-secundary);
+  font-size: 15px;
+}
+
+.input {
+  height: 45px;
+  text-align: center;
+  justify-content: center;
+}
+input {
+  height: 25px;
+  border: var(--grey-50) 2px solid;
+  border-radius: 5px;
+}
+
+.buttonFilter {
+  color: #ffff;
+  background-color: var(--color-primary);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+button {
+  cursor:pointer;
+}
+
+.labels {
+  line-height: 1.5;
+  margin-left: 10px;
+}
+#name {
+  font-size: 16px;
+}
+#price {
+  font-size: 13px;
+}
+#category {
+  font-size: 9px;
+}
+
+.container {
+}
+
+.productsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  border: 2px solid var(--grey-30);
+  border-radius: 5px;
+  margin-left: 39.5px;
+  margin-right: 39.5px;
+  margin-top: 10px;
+  margin-bot:50px;
+  height: 225px;
+  max-width: 220px;
+}
+
+.productImg {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 220px;
+  height: 125px;
+  background-color: var(--grey-20);
+}
+
+.a {
+  background-image: url("https://i.ibb.co/fpVHnZL/hamburguer.png");
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 70px;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+.b {
+  background-image: url("https://i.ibb.co/djbw6LV/x-burgue.png");
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 70px;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+.c {
+  background-image: url("https://i.ibb.co/FYBKCwn/big-kenzie.png");
+
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 70px;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+.d {
+  background-image: url("../img/fanta-guaranaa.png");
+  position: absolute;
+  top: 830px;
+  background-size: 100%;
+  height: 110.8px;
+  width: 110.5px;
+  z-index:1;
+}
+.e {
+  background-image: url("../img/coca-colaa.png");
+  position: absolute;
+  top: 1070px;
+  background-size: 100%;
+  height: 110.8px;
+  width: 75.5px;
+  z-index:1;
+}
+.f {
+  background-image: url("https://i.ibb.co/QNb3DJJ/milkshake-ovomaltine.png");
+  position: absolute;
+  top: 1280px;
+  background-size: 100%;
+  height: 135.3px;
+  width: 152px;
+}
+h4 {
+  padding: 20px;
+}
+.cartContainer {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  margin: 10px;
+  color: white;
+  background-color: var(--color-primary);
+  height: 40px;
+}
+span {
+  font-weight: bold;
+  font-size: 10.72px;
+  padding-right: 60%;
+}
+
+.total {
+  margin: 20px;
+}
+
+.cartCard {
+  margin: 10px;
+  background-color: var(--grey-20);
+}
+.text {
+  margin: 20px;
+}
+
+.saleImg {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  background-color: var(--grey-20);
+  border-radius: 5px;
+}
+.aa {
+  background-image: url("https://i.ibb.co/fpVHnZL/hamburguer.png");
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+.bb {
+  background-image: url("https://i.ibb.co/djbw6LV/x-burgue.png");
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+.cc {
+  background-image: url("https://i.ibb.co/FYBKCwn/big-kenzie.png");
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+.dd {
+  background-image: url("https://i.ibb.co/cCjqmPM/fanta-guarana.png");
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+.ee {
+  background-image: url("https://i.ibb.co/fxCGP7k/coca-cola.png");
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+.ff {
+  background-image: url("https://i.ibb.co/QNb3DJJ/milkshake-ovomaltine.png");
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.totalSaleContainer {
+}
+
+.sale {
+}
+
+.sale_Data {
+  display: flex;
+  max-width: 80%;
+}
+#nameSale {
+}
+
+#priceSale {
+}
+
+.rem {
+  text-align: center;
+}
+
+.remove {
+  text-align: center;
+  color: #ffff;
+  background-color: var(--grey-50);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+.finish {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+}
+hr {
+  margin: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .product {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+
+  .productImg,
+  .product {
+    width: 170px;
+  }
+
+  .productsContainer {
+    margin-right: 40%;
+  }
+  .productsContainer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .total {
+    position: absolute;
+    right: 2%;
+    margin: 0px;
+  }
+  .a, .b, .c {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .d, .e{
+    top: 325px;
+  }
+  .f{top:295px}
+
+  .sale_Data {
+    max-width: 181.97px;
+    max-height: 75px;
+  }
+  .text {
+    margin: 10px;
+    margin-top: 20px;
+  }
+  .title{
+    justify-content: unset;
+    height: 50px;
+  }
+  .input {
+    text-align: unset;
+    position: absolute;
+    right:2%;
+    top:3%;
+    height: 45px;
+  }
+}
+
+@media only screen and (min-width: 888px) {
+  .product {
+    margin-left: 30px;
+    width: 190px;
+  }
+  .productImg {
+    margin-left: 0px;
+    width: 190px;
+  }
+
+  .a, .b, .c {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .product {
+    margin-right: 0px;
+    margin-left: 40px;
+    width: 220px;
+  }
+
+  .productImg {
+    width: 220px;
+    margin-left: 0px;
+  }
+
+  .total {
+    position: absolute;
+    right: 2%;
+    margin: 0px;
+  }
+  .a, .b, .c {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
